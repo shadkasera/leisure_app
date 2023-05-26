@@ -25,7 +25,7 @@ class Lilongwe extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back,
                       size: 30,
                     ),
@@ -38,7 +38,7 @@ class Lilongwe extends StatelessWidget {
                       //   ),
                       // );
                   },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_forward,
                       size: 30,
                     ),

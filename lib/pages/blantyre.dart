@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leisure_app/pages/ryals.dart';
 
 class Blantyre extends StatelessWidget {
   const Blantyre({Key? key});
@@ -69,6 +70,12 @@ class Blantyre extends StatelessWidget {
                         child: TextButton(
                           onPressed: () {
                             // Button pressed callback
+                             Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Ryals(),
+                            ),
+                          );
                           },
                           child: const Text(
                             'Amaryllis',

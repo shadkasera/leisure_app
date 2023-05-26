@@ -17,28 +17,30 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:  [
-                  GestureDetector(onTap: () {
-                    Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const Login(),
-                            ),
-                          );
-                  },
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Login(),
+                        ),
+                      );
+                    },
                     child: const Icon(
                       Icons.arrow_back,
                       size: 30,
                     ),
                   ),
-                  GestureDetector(onTap: () {
-                    // Navigator.push(
-                    //         context,
-                    //         MaterialPageRoute(
-                    //           builder: (context) => const (),
-                    //         ),
-                    //       );
-                  },
+                  GestureDetector(
+                    onTap: () {
+                      // Navigator.push(
+                      //         context,
+                      //         MaterialPageRoute(
+                      //           builder: (context) => const (),
+                      //         ),
+                      //       );
+                    },
                     child: const Icon(
                       Icons.arrow_forward,
                       size: 30,
@@ -87,14 +89,15 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                GestureDetector(onTap: () {
-                  Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const Lilongwe(),
-                            ),
-                          );
-                },
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Lilongwe(),
+                      ),
+                    );
+                  },
                   child: Column(
                     children: [
                       const Text(
@@ -113,14 +116,15 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 //assets
-                GestureDetector(onTap: () {
-                  Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const Blantyre(),
-                            ),
-                          );
-                },
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Blantyre(),
+                      ),
+                    );
+                  },
                   child: Column(
                     children: [
                       const Text(
