@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leisure_app/pages/blantyre.dart';
 import 'package:leisure_app/pages/create.dart';
 import 'package:leisure_app/pages/homepage.dart';
 import 'package:leisure_app/pages/login.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const Blantyre(),
     );
   }
 }
