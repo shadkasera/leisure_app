@@ -43,7 +43,7 @@ class WelcomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 300),
                   Container(
                     width: 200,
                     height: 50,
