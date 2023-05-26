@@ -127,25 +127,6 @@ class Create extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-                          Container(
-                        width: 200,
-                        height: 50,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey,
-                            width: 4,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: 'create Password', hintStyle: TextStyle(fontSize: 20),
-                            contentPadding: EdgeInsets.symmetric(horizontal: 10),
-                          ),
-                        ),
-                  ),
-                  SizedBox(height: 10,),
                       Container(
                         width: 200,
                         height: 50,
@@ -159,12 +140,40 @@ class Create extends StatelessWidget {
                         child: const TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Enter your name', hintStyle: TextStyle(fontSize: 20),
-                            contentPadding: EdgeInsets.symmetric(horizontal: 10),
+                            hintText: 'create Password',
+                            hintStyle: TextStyle(fontSize: 20),
+                            contentPadding:
+                                EdgeInsets.symmetric(horizontal: 10),
                           ),
                         ),
-                  ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 4,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: 'Enter your name',
+                            hintStyle: TextStyle(fontSize: 20),
+                            contentPadding:
+                                EdgeInsets.symmetric(horizontal: 10),
+                          ),
+                        ),
+                      ),
                     ],
+                  ),
+                  const SizedBox(
+                    height: 40,
                   ),
                   //text fiel
                   //text fiel
@@ -182,13 +191,29 @@ class Create extends StatelessWidget {
                         // Button pressed callback
                       },
                       child: const Text(
-                        'Get started',
+                        'Sign Up',
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.white,
                         ),
                       ),
                     ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+
+                  Row(
+                    children: const [
+                      Text(
+                        'Already have an account? ',
+                        style: TextStyle(fontSize: 22,color: Colors.white),
+                      ),
+                       Text(
+                        'Log in',
+                        style: TextStyle(fontSize: 22,color: Colors.black,fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
                 ],
               ),
