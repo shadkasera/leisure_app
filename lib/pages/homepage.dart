@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:leisure_app/pages/blantyre.dart';
+import 'package:leisure_app/pages/lilongwe.dart';
 import 'package:leisure_app/pages/login.dart';
 
 class HomePage extends StatelessWidget {
@@ -85,38 +87,56 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  children: [
-                    const Text(
-                      'Lilongwe',
-                      style: TextStyle(fontSize: 20),
-                    ),
-                    Image.asset(
-                      'assets/images/pexels-jess-loiterton-5006893.jpg',
-                      height: 250,
-                    ),
-                    const Text(
-                      'View',
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ],
+                GestureDetector(onTap: () {
+                  Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Lilongwe(),
+                            ),
+                          );
+                },
+                  child: Column(
+                    children: [
+                      const Text(
+                        'Lilongwe',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Image.asset(
+                        'assets/images/pexels-jess-loiterton-5006893.jpg',
+                        height: 250,
+                      ),
+                      const Text(
+                        'View',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ],
+                  ),
                 ),
                 //assets
-                Column(
-                  children: [
-                    const Text(
-                      'Blantyre',
-                      style: TextStyle(fontSize: 20),
-                    ),
-                    Image.asset(
-                      'assets/images/pexels-jess-loiterton-5006893.jpg',
-                      height: 250,
-                    ),
-                    const Text(
-                      'View',
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ],
+                GestureDetector(onTap: () {
+                  Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Blantyre(),
+                            ),
+                          );
+                },
+                  child: Column(
+                    children: [
+                      const Text(
+                        'Blantyre',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Image.asset(
+                        'assets/images/pexels-jess-loiterton-5006893.jpg',
+                        height: 250,
+                      ),
+                      const Text(
+                        'View',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ],
+                  ),
                 ),
                 //assets
               ],
