@@ -44,22 +44,25 @@ class WelcomePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 300),
-                  Container(
-                    width: 200,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      color: Colors.blue[300],
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: TextButton(
-                      onPressed: () {
-                        // Button pressed callback
-                      },
-                      child: const Text(
-                        'Get started',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 50),
+                    child: Container(
+                      width: 200,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: Colors.blue[300],
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: TextButton(
+                        onPressed: () {
+                          // Button pressed callback
+                        },
+                        child: const Text(
+                          'Get started',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:leisure_app/pages/create.dart';
+import 'package:leisure_app/pages/homepage.dart';
+import 'package:leisure_app/pages/login.dart';
 import 'package:leisure_app/pages/welcome.dart';
 
 void main() {
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Create(),
+      home: const HomePage(),
     );
   }
 }

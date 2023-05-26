@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Create extends StatelessWidget {
-  const Create({Key? key});
+class Login extends StatelessWidget {
+  const Login({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class Create extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.all(10.0),
                     child: Text(
-                      'Sign up to create your account',
+                      'Sign In to your account',
                       style: TextStyle(
                         fontSize: 24,
                       ),
@@ -71,76 +71,7 @@ class Create extends StatelessWidget {
                         child: const TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Enter your name',
-                            hintStyle: TextStyle(fontSize: 20),
-                            contentPadding:
-                                EdgeInsets.symmetric(horizontal: 10),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        width: 200,
-                        height: 50,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey,
-                            width: 4,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: 'Enter your Email',
-                            hintStyle: TextStyle(fontSize: 20),
-                            contentPadding:
-                                EdgeInsets.symmetric(horizontal: 10),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        width: 200,
-                        height: 50,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey,
-                            width: 4,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: 'Enter your Phone Number',
-                            hintStyle: TextStyle(fontSize: 20),
-                            contentPadding:
-                                EdgeInsets.symmetric(horizontal: 10),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        width: 200,
-                        height: 50,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey,
-                            width: 4,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: 'create Password',
+                            hintText: 'Username',
                             hintStyle: TextStyle(fontSize: 20),
                             contentPadding:
                                 EdgeInsets.symmetric(horizontal: 10),
@@ -161,14 +92,18 @@ class Create extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: const TextField(
+                          obscureText: true,
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Enter your name',
+                            hintText: 'Password',
                             hintStyle: TextStyle(fontSize: 20),
                             contentPadding:
                                 EdgeInsets.symmetric(horizontal: 10),
                           ),
                         ),
+                      ), 
+                      const SizedBox(
+                        height: 10,
                       ),
                     ],
                   ),
@@ -191,7 +126,7 @@ class Create extends StatelessWidget {
                         // Button pressed callback
                       },
                       child: const Text(
-                        'Sign Up',
+                        'Sign In',
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.white,
@@ -200,17 +135,17 @@ class Create extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
 
                   Row(
                     children: const [
                       Text(
-                        'Already have an account? ',
+                        'Don\'t have an account? ',
                         style: TextStyle(fontSize: 22, color: Colors.white),
                       ),
                       Text(
-                        'Log in',
+                        ' Sign Up',
                         style: TextStyle(
                             fontSize: 22,
                             color: Colors.black,
