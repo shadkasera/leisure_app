@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leisure_app/pages/login.dart';
 
 class Create extends StatelessWidget {
   const Create({Key? key});
@@ -78,7 +79,7 @@ class Create extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Container(
@@ -101,7 +102,7 @@ class Create extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Container(
@@ -124,7 +125,7 @@ class Create extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Container(
@@ -189,6 +190,12 @@ class Create extends StatelessWidget {
                     child: TextButton(
                       onPressed: () {
                         // Button pressed callback
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Login(),
+                            ),
+                          );
                       },
                       child: const Text(
                         'Sign Up',
@@ -204,17 +211,26 @@ class Create extends StatelessWidget {
                   ),
 
                   Row(
-                    children: const [
-                      Text(
+                    children:  [
+                      const Text(
                         'Already have an account? ',
                         style: TextStyle(fontSize: 22, color: Colors.white),
                       ),
-                      Text(
-                        'Log in',
-                        style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
+                      GestureDetector(onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Login(),
+                            ),
+                          );
+                      },
+                        child: const Text(
+                          'Log in',
+                          style: TextStyle(
+                              fontSize: 22,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ],
                   ),

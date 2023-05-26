@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leisure_app/pages/login.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key});
@@ -14,14 +15,32 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Icon(
-                    Icons.arrow_back,
-                    size: 30,
+                children:  [
+                  GestureDetector(onTap: () {
+                    Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Login(),
+                            ),
+                          );
+                  },
+                    child: const Icon(
+                      Icons.arrow_back,
+                      size: 30,
+                    ),
                   ),
-                  Icon(
-                    Icons.arrow_forward,
-                    size: 30,
+                  GestureDetector(onTap: () {
+                    // Navigator.push(
+                    //         context,
+                    //         MaterialPageRoute(
+                    //           builder: (context) => const (),
+                    //         ),
+                    //       );
+                  },
+                    child: const Icon(
+                      Icons.arrow_forward,
+                      size: 30,
+                    ),
                   ),
                 ],
               ),

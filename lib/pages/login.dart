@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:leisure_app/pages/create.dart';
+import 'package:leisure_app/pages/homepage.dart';
 
 class Login extends StatelessWidget {
   const Login({Key? key});
@@ -123,7 +125,12 @@ class Login extends StatelessWidget {
                     ),
                     child: TextButton(
                       onPressed: () {
-                        // Button pressed callback
+                       Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const HomePage(),
+                            ),
+                          );
                       },
                       child: const Text(
                         'Sign In',
@@ -139,17 +146,26 @@ class Login extends StatelessWidget {
                   ),
 
                   Row(
-                    children: const [
-                      Text(
+                    children:  [
+                      const Text(
                         'Don\'t have an account? ',
                         style: TextStyle(fontSize: 22, color: Colors.white),
                       ),
-                      Text(
-                        ' Sign Up',
-                        style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
+                      GestureDetector(onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Create(),
+                            ),
+                          );
+                      },
+                        child: const Text(
+                          ' Sign Up',
+                          style: TextStyle(
+                              fontSize: 22,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ],
                   ),

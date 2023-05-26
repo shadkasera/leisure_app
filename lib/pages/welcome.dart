@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leisure_app/pages/login.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key});
@@ -56,6 +57,12 @@ class WelcomePage extends StatelessWidget {
                       child: TextButton(
                         onPressed: () {
                           // Button pressed callback
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Login(),
+                            ),
+                          );
                         },
                         child: const Text(
                           'Get started',
